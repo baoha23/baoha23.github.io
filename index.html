@@ -49,6 +49,11 @@
             margin-bottom: 20px;
             border: 5px solid #1877f2;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.1);
         }
 
         .name {
@@ -65,6 +70,13 @@
             line-height: 1.5;
         }
 
+        .bio1 {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+
         .contact-btns a {
             display: block;
             margin: 12px 0;
@@ -79,10 +91,7 @@
         }
 
         .facebook { background-color: #3b5998; }
-        .tiktok { background-color: #010101; background: linear-gradient(to right, #010101, #6c0016); }
-        .messenger { background-color: #0084ff; }
         .zalo { background-color: #0064f7; }
-        .phone { background-color: #4CAF50; }
         .momo { background-color: #a80069; background: linear-gradient(to right, #a80069, #d73193); }
 
         .contact-btns a:hover {
@@ -138,14 +147,14 @@
     <div class="card">
         <img src="https://img.freepik.com/premium-psd/png-charming-kawaii-anime-panda-girl-with-bamboo-leaf-hat-creative-chibi-sticker-collection_1020495-343310.jpg" alt="Avatar" class="avatar">
         <p class="name">Hà Quốc Bảo</p>
-        <p class="bio">Trang thông tin và liên lạc. Hãy kết nối với tôi!</p>
+        <p class="bio">Hãy kết nối với tôi!</p>
+        <p class="bio1">Phone number: <span style="font-weight: bold; color: #1877f2;">0974586535</span></p>
+        <p class="bio1">Gmail: <span style="font-weight: bold; color: #1877f2;">bao230602@gmail.com</span></p>
         <div class="contact-btns">
             <a href="https://www.facebook.com/baoha.2362/" class="facebook" target="_blank">Facebook</a>
             <a href="https://zalo.me/0974586535" class="zalo" target="_blank">Zalo</a>
-            <a href="tel:+84974586535" class="phone">Phone 0974586535</a>
             <a href="https://me.momo.vn/WEINuKF5fZC7iasdCyU7" class="momo" target="_blank">Momo</a>
         </div>
-        <a href="mailto:bao230602@gmail.com" class="btn">Gửi Email</a>
     </div>
 </body>
 </html>
