@@ -3,124 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hà Quốc Bảo | Personal Profile</title>
-
+<title>Hà Quốc Bảo | Portfolio</title>
 <style>
-* { box-sizing: border-box; }
-
 body {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    min-height: 100vh;
-    color: #333;
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#fafafa;
+    color:#222;
 }
-
-/* ====== LAYOUT ====== */
 .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
-    gap: 30px;
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
 }
-
-/* ====== CARD ====== */
-.card {
-    background: rgba(255,255,255,0.95);
-    border-radius: 18px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+header {
+    text-align:center;
+    margin-bottom:50px;
 }
-
-/* ====== PROFILE ====== */
-.profile {
-    text-align: center;
+header h1 {
+    margin:8px 0;
+    font-size:36px;
 }
-
-.avatar {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 4px solid #1877f2;
-    margin-bottom: 15px;
+header p {
+    font-size:18px;
+    color:#555;
 }
-
-.name {
-    font-size: 24px;
-    font-weight: 700;
+section {
+    margin-bottom:60px;
 }
-
-.role {
-    color: #666;
-    margin-bottom: 20px;
+h2 {
+    border-bottom:2px solid #1877f2;
+    padding-bottom:8px;
+    margin-bottom:20px;
+    font-size:24px;
+    color:#1877f2;
 }
-
-.tags span {
-    display: inline-block;
-    background: #1877f2;
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 14px;
-    margin: 5px;
+.about img {
+    width:140px;
+    border-radius:50%;
+    float:left;
+    margin-right:20px;
 }
-
-/* ====== ABOUT ====== */
-.about h2,
-.contact h2 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-
 .about p {
-    line-height: 1.6;
-    margin-bottom: 15px;
+    line-height:1.6;
 }
-
-.skills li {
-    margin-bottom: 8px;
+.projects .project {
+    margin-bottom:25px;
 }
-
-/* ====== CONTACT ====== */
-.contact-item {
-    margin-bottom: 15px;
+.skills .tag {
+    display:inline-block;
+    background:#1877f2;
+    color:white;
+    padding:6px 12px;
+    margin:4px;
+    border-radius:20px;
 }
-
-.contact-item a {
-    color: #1877f2;
-    font-weight: 600;
-    text-decoration: none;
+.contact a {
+    display:block;
+    color:#1877f2;
+    text-decoration:none;
+    margin:8px 0;
+    font-size:18px;
 }
-
-.btn {
-    display: block;
-    text-align: center;
-    padding: 14px;
-    border-radius: 10px;
-    margin-top: 15px;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.facebook { background: #3b5998; }
-.zalo { background: #0064f7; }
-.momo { background: linear-gradient(90deg,#a80069,#d73193); }
-
-.btn:hover {
-    filter: brightness(0.9);
-    transform: translateY(-3px);
-}
-
-/* ====== RESPONSIVE ====== */
-@media (max-width: 900px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
+footer {
+    text-align:center;
+    margin-top:40px;
+    font-size:14px;
+    color:#888;
 }
 </style>
 </head>
@@ -129,60 +78,49 @@ body {
 
 <div class="container">
 
-    <!-- PROFILE -->
-    <div class="card profile">
-        <img src="avatar.jpg" alt="Hà Quốc Bảo" class="avatar">
-        <div class="name">Hà Quốc Bảo</div>
-        <div class="role">Personal Profile</div>
+    <header>
+        <h1>Hà Quốc Bảo</h1>
+        <p>Chuyên xây dựng portfolio &amp; landing page</p>
+    </header>
 
-        <div class="tags">
-            <span>IT</span>
-            <span>Web</span>
-            <span>Freelancer</span>
-        </div>
-    </div>
-
-    <!-- ABOUT -->
-    <div class="card about">
+    <section class="about">
         <h2>Giới thiệu</h2>
-        <p>
-            Tôi là Hà Quốc Bảo, mong muốn xây dựng hình ảnh cá nhân
-            chuyên nghiệp, rõ ràng và đáng tin cậy trong môi trường số.
-        </p>
+        <img src="avatar.jpg" alt="Avatar Hà Quốc Bảo">
+        <p>Tôi là Hà Quốc Bảo — chuyên thiết kế và phát triển giao diện web.</p>
+    </section>
 
+    <section class="projects">
+        <h2>Portfolio / Thành tựu</h2>
+        <div class="project">
+            <strong>Website Cá nhân – 2025</strong>
+            <p>Một trang portfolio chuyên nghiệp dùng để giới thiệu bản thân.</p>
+        </div>
+        <div class="project">
+            <strong>Landing Page Dịch vụ – 2024</strong>
+            <p>Trang landing page bán dịch vụ freelance.</p>
+        </div>
+    </section>
+
+    <section class="skills">
         <h2>Kỹ năng</h2>
-        <ul class="skills">
-            <li>HTML / CSS cơ bản</li>
-            <li>Thiết kế giao diện web</li>
-            <li>Làm landing page cá nhân</li>
-            <li>Hỗ trợ kỹ thuật & công nghệ</li>
-        </ul>
-    </div>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Responsive</span>
+        <span class="tag">UI Design</span>
+    </section>
 
-    <!-- CONTACT -->
-    <div class="card contact">
+    <section class="contact">
         <h2>Liên hệ</h2>
-
-        <div class="contact-item">
-            📞 <a href="tel:0974586535">0974 ••• •••</a>
-        </div>
-
-        <div class="contact-item">
-            ✉️ <a href="mailto:bao230602@gmail.com">bao****@gmail.com</a>
-        </div>
-
-        <a class="btn facebook" href="https://www.facebook.com/baoha.2362/" target="_blank">
-            Facebook
-        </a>
-        <a class="btn zalo" href="https://zalo.me/0974586535" target="_blank">
-            Zalo
-        </a>
-        <a class="btn momo" href="https://me.momo.vn/WEINuKF5fZC7iasdCyU7" target="_blank">
-            MoMo
-        </a>
-    </div>
+        <a href="tel:0974586535">0974586535</a>
+        <a href="mailto:bao230602@gmail.com">bao230602@gmail.com</a>
+        <a href="https://www.facebook.com/baoha.2362/" target="_blank">Facebook</a>
+    </section>
 
 </div>
+
+<footer>
+    © 2026 Hà Quốc Bảo
+</footer>
 
 </body>
 </html>
