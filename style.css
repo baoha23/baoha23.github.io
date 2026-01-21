@@ -134,3 +134,21 @@ body {
         padding: 30px;
     }
 }
+
+/*Nút đownload*/
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* màu xanh đẹp */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
