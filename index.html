@@ -3,124 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hà Quốc Bảo | Portfolio</title>
+<title>Hà Quốc Bảo</title>
+
 <style>
 body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#fafafa;
-    color:#222;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #111;
 }
-.container {
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
+
+.layout {
+    display: grid;
+    grid-template-columns: 260px 1fr 320px;
+    min-height: 100vh;
 }
-header {
-    text-align:center;
-    margin-bottom:50px;
+
+/* LEFT */
+.left {
+    padding: 40px;
+    border-right: 1px solid #ddd;
 }
-header h1 {
-    margin:8px 0;
-    font-size:36px;
+
+.left h3 {
+    font-size: 14px;
+    letter-spacing: .15em;
+    margin-bottom: 30px;
 }
-header p {
-    font-size:18px;
-    color:#555;
+
+.left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-section {
-    margin-bottom:60px;
+
+.left li {
+    margin-bottom: 14px;
+    font-size: 15px;
 }
-h2 {
-    border-bottom:2px solid #1877f2;
-    padding-bottom:8px;
-    margin-bottom:20px;
-    font-size:24px;
-    color:#1877f2;
+
+/* CENTER */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.about img {
-    width:140px;
-    border-radius:50%;
-    float:left;
-    margin-right:20px;
+
+.center img {
+    max-width: 420px;
+    width: 80%;
 }
-.about p {
-    line-height:1.6;
+
+/* RIGHT */
+.right {
+    padding: 40px;
+    border-left: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 1.6;
 }
-.projects .project {
-    margin-bottom:25px;
+
+.right h2 {
+    font-size: 18px;
+    letter-spacing: .1em;
+    margin-bottom: 20px;
 }
-.skills .tag {
-    display:inline-block;
-    background:#1877f2;
-    color:white;
-    padding:6px 12px;
-    margin:4px;
-    border-radius:20px;
-}
-.contact a {
-    display:block;
-    color:#1877f2;
-    text-decoration:none;
-    margin:8px 0;
-    font-size:18px;
-}
-footer {
-    text-align:center;
-    margin-top:40px;
-    font-size:14px;
-    color:#888;
+
+.meta {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="layout">
 
-    <header>
-        <h1>Hà Quốc Bảo</h1>
-        <p>Chuyên xây dựng portfolio &amp; landing page</p>
-    </header>
+    <aside class="left">
+        <h3>PROFILE</h3>
+        <ul>
+            <li>HÀ QUỐC BẢO</li>
+            <li>WEB / IT</li>
+            <li>PORTFOLIO</li>
+        </ul>
+    </aside>
 
-    <section class="about">
-        <h2>Giới thiệu</h2>
-        <img src="avatar.jpg" alt="Avatar Hà Quốc Bảo">
-        <p>Tôi là Hà Quốc Bảo — chuyên thiết kế và phát triển giao diện web.</p>
-    </section>
+    <main class="center">
+        <img src="avatar.jpg" alt="Hà Quốc Bảo">
+    </main>
 
-    <section class="projects">
-        <h2>Portfolio / Thành tựu</h2>
-        <div class="project">
-            <strong>Website Cá nhân – 2025</strong>
-            <p>Một trang portfolio chuyên nghiệp dùng để giới thiệu bản thân.</p>
+    <aside class="right">
+        <h2>HÀ QUỐC BẢO</h2>
+        <p>1996. 04. 22</p>
+
+        <div class="meta">
+            <strong>SKILLS</strong><br>
+            HTML / CSS<br>
+            Landing Page<br>
+            Portfolio Website
         </div>
-        <div class="project">
-            <strong>Landing Page Dịch vụ – 2024</strong>
-            <p>Trang landing page bán dịch vụ freelance.</p>
+
+        <div class="meta">
+            <strong>CONTACT</strong><br>
+            bao230602@gmail.com<br>
+            0974•••6535
         </div>
-    </section>
-
-    <section class="skills">
-        <h2>Kỹ năng</h2>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">Responsive</span>
-        <span class="tag">UI Design</span>
-    </section>
-
-    <section class="contact">
-        <h2>Liên hệ</h2>
-        <a href="tel:0974586535">0974586535</a>
-        <a href="mailto:bao230602@gmail.com">bao230602@gmail.com</a>
-        <a href="https://www.facebook.com/baoha.2362/" target="_blank">Facebook</a>
-    </section>
+    </aside>
 
 </div>
-
-<footer>
-    © 2026 Hà Quốc Bảo
-</footer>
 
 </body>
 </html>
