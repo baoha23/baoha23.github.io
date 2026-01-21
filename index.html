@@ -1,113 +1,85 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hà Quốc Bảo</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    background: #fff;
-    color: #111;
-}
-
-.layout {
-    display: grid;
-    grid-template-columns: 260px 1fr 320px;
-    min-height: 100vh;
-}
-
-/* LEFT */
-.left {
-    padding: 40px;
-    border-right: 1px solid #ddd;
-}
-
-.left h3 {
-    font-size: 14px;
-    letter-spacing: .15em;
-    margin-bottom: 30px;
-}
-
-.left ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.left li {
-    margin-bottom: 14px;
-    font-size: 15px;
-}
-
-/* CENTER */
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center img {
-    max-width: 420px;
-    width: 80%;
-}
-
-/* RIGHT */
-.right {
-    padding: 40px;
-    border-left: 1px solid #ddd;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.right h2 {
-    font-size: 18px;
-    letter-spacing: .1em;
-    margin-bottom: 20px;
-}
-
-.meta {
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-    margin-top: 20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hà Quốc Bảo | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="layout">
 
+    <!-- LEFT COLUMN -->
     <aside class="left">
-        <h3>PROFILE</h3>
-        <ul>
-            <li>HÀ QUỐC BẢO</li>
-            <li>WEB / IT</li>
-            <li>PORTFOLIO</li>
-        </ul>
-    </aside>
-
-    <main class="center">
-        <img src="avatar.jpg" alt="Hà Quốc Bảo">
-    </main>
-
-    <aside class="right">
-        <h2>HÀ QUỐC BẢO</h2>
-        <p>1996. 04. 22</p>
+        <img src="avatar.jpg" alt="Hà Quốc Bảo" class="avatar">
+        <h3>HÀ QUỐC BẢO</h3>
+        <p>Web / IT Developer</p>
 
         <div class="meta">
-            <strong>SKILLS</strong><br>
-            HTML / CSS<br>
-            Landing Page<br>
-            Portfolio Website
+            <strong>Skills</strong>
+            <ul>
+                <li>HTML / CSS / JS</li>
+                <li>React / Node.js</li>
+                <li>UI/UX Design</li>
+                <li>SEO & Responsive</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- CENTER COLUMN -->
+    <main class="center">
+        <h3>Giới thiệu</h3>
+        <p>
+            Tôi là Hà Quốc Bảo, lập trình viên Web với hơn 6 năm kinh nghiệm trong việc thiết kế và phát triển website, landing page, và các dự án IT đa dạng. Tôi đam mê công nghệ mới và luôn tìm kiếm giải pháp tối ưu cho trải nghiệm người dùng.
+        </p>
+
+        <h3>Dự án nổi bật</h3>
+        <ul>
+            <li><strong>Portfolio cá nhân:</strong> Thiết kế và triển khai trang portfolio cho cá nhân và khách hàng.</li>
+            <li><strong>Landing Page startup:</strong> Tối ưu tốc độ tải trang và chuyển đổi người dùng.</li>
+            <li><strong>Website thương mại điện tử:</strong> Triển khai hệ thống mua bán trực tuyến với thanh toán tích hợp.</li>
+            <li><strong>Ứng dụng quản lý nội bộ:</strong> Dashboard theo dõi dữ liệu và báo cáo tự động.</li>
+        </ul>
+
+        <h3>Kinh nghiệm làm việc</h3>
+        <ul>
+            <li><strong>Frontend Developer</strong> - Công ty ABC (2018 - 2021)</li>
+            <li><strong>Fullstack Developer</strong> - Công ty XYZ (2021 - nay)</li>
+            <li><strong>Freelancer Web Developer</strong> - Nhiều dự án cá nhân & khách hàng (2016 - nay)</li>
+        </ul>
+
+        <h3>Học vấn</h3>
+        <ul>
+            <li>Cử nhân Công nghệ Thông tin - Đại học Bách Khoa Hà Nội (2014 - 2018)</li>
+            <li>Chứng chỉ HTML5 & CSS3 nâng cao - Aptech International (2017)</li>
+            <li>Chứng chỉ JavaScript & ReactJS - FPT Software Academy (2019)</li>
+        </ul>
+
+        <h3>Sở thích</h3>
+        <ul>
+            <li>Tham gia hackathon & meetup công nghệ</li>
+            <li>Chơi cờ vua và lập trình game nhỏ</li>
+            <li>Đọc sách về AI, blockchain và phát triển bản thân</li>
+        </ul>
+    </main>
+
+    <!-- RIGHT COLUMN -->
+    <aside class="right">
+        <h2>Thông tin liên hệ</h2>
+        <p class="birth">1996.04.22</p>
+
+        <div class="meta">
+            <strong>Contact</strong>
+            <p>Email: bao230602@gmail.com</p>
+            <p>Phone: 0974 ••• •••</p>
+            <p>LinkedIn: linkedin.com/in/haquocbao</p>
+            <p>GitHub: github.com/haquocbao</p>
         </div>
 
         <div class="meta">
-            <strong>CONTACT</strong><br>
-            bao230602@gmail.com<br>
-            0974•••6535
+            <strong>Mục tiêu nghề nghiệp</strong>
+            <p>Trở thành chuyên gia Fullstack, phát triển các sản phẩm web sáng tạo, tối ưu trải nghiệm người dùng, đồng thời chia sẻ kiến thức cho cộng đồng.</p>
         </div>
     </aside>
 
